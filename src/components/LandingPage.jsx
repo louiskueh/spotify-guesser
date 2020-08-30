@@ -4,8 +4,16 @@ import axios from "axios";
 // import withStyles from "material-ui/styles/withStyles";
 import Player from "./Player.jsx";
 
-
 class LandingPage extends React.Component {
+  componentDidMount() {
+    this.interval = setInterval(
+      () => this.getCurrentlyPlaying(this.props.token),
+      1000
+    );
+  }
+  componentWillUnmount() {
+    clearInterval(this.getCurrentlyPlaying);
+  }
   constructor() {
     super();
     this.state = {
@@ -23,16 +31,18 @@ class LandingPage extends React.Component {
     };
     this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
   }
+
   getCurrentlyPlaying(token) {
-    console.log("Inside currently playing")
+    console.log("Inside currently playing");
     const getCurrentSpotify = axios.create({
-      baseURL: 'https://api.spotify.com',
-      headers: {'Authorization': 'Bearer '+ token}
+      baseURL: "https://api.spotify.com",
+      headers: { Authorization: "Bearer " + token },
     });
 
-    getCurrentSpotify.get('/v1/me/player/currently-playing')
+    getCurrentSpotify
+      .get("/v1/me/player/currently-playing")
       .then((response) => {
-        console.log(response)
+        console.log(response);
         this.setState({
           item: response.data.item,
           is_playing: response.data.is_playing,
@@ -43,6 +53,7 @@ class LandingPage extends React.Component {
         console.error(error.response.data);
       });
   }
+
   render() {
     const { classes } = this.props;
     return (
@@ -51,13 +62,13 @@ class LandingPage extends React.Component {
         <SpotifyApiContext.Provider value={this.props.token}>
           <p>You are authorized with token: {this.props.token}</p>
         </SpotifyApiContext.Provider>
-        <h1>playing is {this.state.is_playing}</h1>
-        <h1> Progress is {this.progress_ms} </h1>
-        <button onClick={() => this.getCurrentlyPlaying(this.props.token)}>Get current playing</button>
+        <button onClick={() => this.getCurrentlyPlaying(this.props.token)}>
+          Get current playing
+        </button>
         <Player
           item={this.state.item}
           is_playing={this.state.is_playing}
-          progress_ms={this.progress_ms}
+          progress_ms={this.state.progress_ms}
         />
       </div>
     );
