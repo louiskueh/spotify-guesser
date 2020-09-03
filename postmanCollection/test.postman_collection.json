@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "e8e2747e-abbd-4318-80d0-82c3e822901a",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Current play",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "BQB_tW7lxae6xANz5RfIDtMxefHxedkZAyG9rEMDnGlv4SNq2dR6nAXwetK_0XHXkzqe4Ox3qztvvy6FIGoiFiBCQbEuRfwBTX2gBGQnwC58x5N5Q1ckVoRaDyrUTyf-uCKwn4o1QErJB9bI",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.spotify.com/v1/me/player/currently-playing",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"me",
+						"player",
+						"currently-playing"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "ES",
+							"disabled": true
+						},
+						{
+							"key": "additional_types",
+							"value": "episode",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
