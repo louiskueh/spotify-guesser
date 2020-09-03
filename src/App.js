@@ -20,7 +20,7 @@ const App = () => {
         <SpotifyAuth
           redirectUri='http://localhost:3000/callback'
           clientID='3770ed0bc8aa4ae6ba4dd47dec8b5fcd'
-          scopes={[Scopes.userReadPrivate, Scopes.userReadEmail]} // either style will work
+          scopes={[Scopes.userReadCurrentlyPlaying]} // either style will work
         />
       )}
     </div>
