@@ -1,7 +1,5 @@
 import React from "react";
-import { SpotifyApiContext, Artist } from "react-spotify-api";
 import axios from "axios";
-// import withStyles from "material-ui/styles/withStyles";
 import Player from "./Player.jsx";
 
 class LandingPage extends React.Component {
@@ -27,10 +25,11 @@ class LandingPage extends React.Component {
     this.state = {
       token: null,
       item: this.emptyItem,
-      is_playing: "Paused",
+      is_playing: false,
       progress_ms: 0,
     };
     this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
+
   }
 
   getCurrentlyPlaying(token) {
@@ -51,10 +50,10 @@ class LandingPage extends React.Component {
             is_playing: response.data.is_playing,
             progress_ms: response.data.progress_ms,
           });
-        }else{
+        } else {
           this.setState({
             item: this.emptyItem,
-            is_playing: "Paused",
+            is_playing: false,
             progress_ms: 0,
           })
         }
@@ -82,14 +81,13 @@ class LandingPage extends React.Component {
     }
     return (
       <div>
-        LandingPage
-        <SpotifyApiContext.Provider value={this.props.token}>
-          <p>You are authorized with token: {this.props.token}</p>
-        </SpotifyApiContext.Provider>
-        <button onClick={() => this.getCurrentlyPlaying(this.props.token)}>
-          Get current playing
-        </button>
-        {placeHolder}
+        <div className="d-flex justify-content-center">
+          LandingPage
+        </div>
+        {/* <p>You are authorized with token: {this.props.token}</p> */}
+        <div className="d-flex justify-content-center">
+          {placeHolder}
+        </div>
       </div>
     );
   }
