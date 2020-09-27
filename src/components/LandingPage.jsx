@@ -1,6 +1,7 @@
-import React from "react";
 import axios from "axios";
+import React from "react";
 import Player from "./Player.jsx";
+import FlippingCardPage from './FlippingCard.jsx'
 
 class LandingPage extends React.Component {
   emptyItem = {
@@ -72,23 +73,25 @@ class LandingPage extends React.Component {
       placeHolder = <div>Please play a song on Spotify</div>;
     } else {
       placeHolder = (
-        <Player
-          item={this.state.item}
-          is_playing={this.state.is_playing}
-          progress_ms={this.state.progress_ms}
+        // <Player
+        //   item={this.state.item}
+        //   is_playing={this.state.is_playing}
+        //   progress_ms={this.state.progress_ms}
+        // />
+        <FlippingCardPage
+        item={this.state.item}
+        is_playing={this.state.is_playing}
+        progress_ms={this.state.progress_ms}
         />
       );
     }
     return (
       <div>
-        <div className="d-flex justify-content-center">
-          LandingPage
-        </div>
         {/* <p>You are authorized with token: {this.props.token}</p> */}
-        <div className="d-flex justify-content-center">
           {placeHolder}
-        </div>
+       
       </div>
+      
     );
   }
 }

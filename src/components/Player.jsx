@@ -25,7 +25,6 @@ const Player = props => {
             {props.is_playing ? "Playing" : "Paused"}
           </div>
           <LinearProgress variant="determinate" value={(props.progress_ms * 100 / props.item.duration_ms)} />
-          {/* progress bar - {props.progress_ms} - {props.item.duration_ms}   */}
           <div className="progress">
             <div
               className="progress__bar"

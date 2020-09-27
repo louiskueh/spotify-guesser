@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Cookies from 'js-cookie'
 
 import { SpotifyAuth, Scopes } from 'react-spotify-auth'
-import 'react-spotify-auth/dist/index.css'
+import './App.css'
 import LandingPage from './components/LandingPage.jsx'
 import Header from './components/Header.jsx'
 
@@ -14,16 +14,21 @@ const App = () => {
   }, [Cookies.get('spotifyAuthToken')])
 
   return (
-    <div className='app'>
+    <div className='App'>
       <Header></Header>
-  
+
       {Cookies.get('spotifyAuthToken') ? (
         <div>
           <LandingPage token={spotifyAuthToken}></LandingPage>
         </div>
       ) : (
           // Display the login page
-          <div class="d-flex justify-content-center">
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingTop: '10rem'
+          }}>
             <SpotifyAuth
               redirectUri='http://localhost:3000/callback'
               clientID='3770ed0bc8aa4ae6ba4dd47dec8b5fcd'
