@@ -1,0 +1,27 @@
+.cardColor{
+    background-color: #424242
+}
+
+.whiteText{
+    font-family: 'Montserrat', sans-serif;
+    color:#FFFFFF
+}
+
+.md-form input[type='text']:focus:not([readonly]) {
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 1px 0 0 #1DB954 !important;
+    border-bottom: 1px solid #1DB954 !important;
+    font-size: large;
+  }
+  .md-form input[type='text']:focus:not([readonly]) + label {
+    font-family: 'Montserrat', sans-serif;
+    color: white !important;
+  }
+
+.md-form input[type='text']:focus{
+    color: white
+}
+
+.button{
+   color:#1DB954,
+}

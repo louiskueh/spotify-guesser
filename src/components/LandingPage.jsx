@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import Player from "./Player.jsx";
-import FlippingCardPage from './FlippingCard.jsx'
+import FlippingCard from './FlippingCard.jsx'
 
 class LandingPage extends React.Component {
   emptyItem = {
@@ -78,7 +78,7 @@ class LandingPage extends React.Component {
         //   is_playing={this.state.is_playing}
         //   progress_ms={this.state.progress_ms}
         // />
-        <FlippingCardPage
+        <FlippingCard
         item={this.state.item}
         is_playing={this.state.is_playing}
         progress_ms={this.state.progress_ms}

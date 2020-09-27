@@ -24,7 +24,7 @@ const Player = props => {
           <div className="now-playing__status">
             {props.is_playing ? "Playing" : "Paused"}
           </div>
-          <LinearProgress variant="determinate" value={(props.progress_ms * 100 / props.item.duration_ms)} />
+ 
           <div className="progress">
             <div
               className="progress__bar"
