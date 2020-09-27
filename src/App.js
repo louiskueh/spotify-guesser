@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { SpotifyApiContext } from 'react-spotify-api'
 import Cookies from 'js-cookie'
  
@@ -9,9 +9,14 @@ import LandingPage from './components/LandingPage.jsx'
 
 const App = () => {
   const token = Cookies.get('spotifyAuthToken')
+  const [spotifyAuthToken, setSpotifyAuthToken] = useState()
+  useEffect(() => {
+    setSpotifyAuthToken(Cookies.get('spotifyAuthToken'))
+  }, [Cookies.get('spotifyAuthToken')])
+
   return (
     <div className='app'>
-      {token ? (
+      {Cookies.get('spotifyAuthToken') ? (
         <div>
         <LandingPage token={token}></LandingPage>
         </div>
