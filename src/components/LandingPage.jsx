@@ -1,17 +1,8 @@
 import axios from "axios";
 import React from "react";
-import Player from "./Player.jsx";
 import FlippingCard from './FlippingCard.jsx'
 
 class LandingPage extends React.Component {
-  emptyItem = {
-    album: {
-      images: [{ url: "" }],
-    },
-    name: "",
-    artists: [{ name: "" }],
-    duration_ms: 0,
-  };
   componentDidMount() {
     this.interval = setInterval(
       () => this.getCurrentlyPlaying(this.props.token),
@@ -25,7 +16,7 @@ class LandingPage extends React.Component {
     super();
     this.state = {
       token: null,
-      item: this.emptyItem,
+      item: null,
       is_playing: false,
       progress_ms: 0,
     };
@@ -53,7 +44,7 @@ class LandingPage extends React.Component {
           });
         } else {
           this.setState({
-            item: this.emptyItem,
+            item: null,
             is_playing: false,
             progress_ms: 0,
           })
@@ -65,33 +56,20 @@ class LandingPage extends React.Component {
   }
 
   render() {
-    const { classes } = this.props;
-    let placeHolder;
-    // console.log("STATE IS " + JSON.stringify(this.state.item));
-    if (this.state == this.emptyItem) {
-      // Empty image
-      placeHolder = <div>Please play a song on Spotify</div>;
-    } else {
-      placeHolder = (
-        // <Player
-        //   item={this.state.item}
-        //   is_playing={this.state.is_playing}
-        //   progress_ms={this.state.progress_ms}
-        // />
-        <FlippingCard
+    console.log("STATE IS " + JSON.stringify(this.state.item));
+
+    return (
+      this.state.item ? <FlippingCard
         item={this.state.item}
         is_playing={this.state.is_playing}
         progress_ms={this.state.progress_ms}
-        />
-      );
-    }
-    return (
-      <div>
-        {/* <p>You are authorized with token: {this.props.token}</p> */}
-          {placeHolder}
-       
-      </div>
-      
+      /> : <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingTop: '7rem'
+      }}>Please play a song on Spotify</div>
+
     );
   }
 }

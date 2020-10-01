@@ -9,15 +9,16 @@ class FlippingCard extends Component {
             color: '#FFFFFF',
         }
     };
-
-    state = {
-        flipped1: false,
+    constructor(props) {
+        super(props)
+        this.state = { flipped: false };
+        this.flip = this.flip.bind(this);
+    }
+    flip = () => {
+        console.log('flip')
+        this.setState({ flipped: !this.state.flipped });
     }
 
-    handleFlipping = id => () => {
-        const cardId = `flipped${id}`;
-        this.setState({ [cardId]: !this.state[cardId] });
-    }
 
     render() {
         return (
@@ -28,27 +29,30 @@ class FlippingCard extends Component {
                 paddingTop: '7rem'
             }}>
                 <div className="card-container">
-                    <div className="front"> <MDBCard style={{
-                        width: "100%",
-                        height: "100%"
-                    }}>
-                        <MDBCardImage className="img-fluid" src={this.props.item.album.images[0].url} waves />
-                        <LinearProgress variant="determinate" value={(this.props.progress_ms * 100 / this.props.item.duration_ms)} />
-                        <MDBCardBody className='cardColor'>
-                            {/* <MDBCardTitle className='whiteText'>{this.props.item.name}</MDBCardTitle>
+                    <div className="front">
+                        <MDBCard style={{
+                            width: "100%",
+                            height: "100%"
+                        }}>
+                            <MDBCardImage className="img-fluid" src={this.props.item.album.images[0].url} waves />
+                            <LinearProgress variant="determinate" value={(this.props.progress_ms * 100 / this.props.item.duration_ms)} />
+                            <MDBCardBody className='cardColor'>
+                                {/* <MDBCardTitle className='whiteText'>{this.props.item.name}</MDBCardTitle>
                         <MDBCardText className='whiteText'>
                             {this.props.item.artists[0].name}
                         </MDBCardText> */}
-                            <MDBInput className='whiteText' label="Guess the song!" />
-                            <MDBInput className='whiteText' label="Guess the artist!" />
-                            <MDBBtn color='success' className='whiteText'>Check</MDBBtn>
+                                <MDBInput className='whiteText' label="Guess the song!" />
+                                <MDBInput className='whiteText' label="Guess the artist!" />
+                                <div className='flip'>
+                                    <MDBBtn color='success' onClick={this.flip} onMouseLeave={this.flip} className={'whiteText' + (this.state.flipped ? "flipped" : "")}>Check</MDBBtn>
+                            </div>
                         </MDBCardBody>
                     </MDBCard></div>
-                    <div className="back">Back Side</div>
+                <div className="back">Back Side</div>
                 </div>
 
 
-            </MDBContainer>
+            </MDBContainer >
 
         );
     }
