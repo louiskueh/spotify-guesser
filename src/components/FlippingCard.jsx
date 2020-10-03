@@ -3,12 +3,6 @@ import { MDBInput, MDBContainer, MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDB
 import { LinearProgress } from '@material-ui/core';
 import '../styles/FlippingCard.css'
 class FlippingCard extends Component {
-    styles = {
-        customButton: {
-            backgroundColor: '#1DB954',
-            color: '#FFFFFF',
-        }
-    };
     constructor(props) {
         super(props)
         this.state = { flipped: false };

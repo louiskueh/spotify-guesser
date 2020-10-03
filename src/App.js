@@ -4,8 +4,6 @@ import Cookies from 'js-cookie'
 import { SpotifyAuth, Scopes } from 'react-spotify-auth'
 import './App.css'
 import LandingPage from './components/LandingPage.jsx'
-import Header from './components/Header.jsx'
-
 
 const App = () => {
   const [spotifyAuthToken, setSpotifyAuthToken] = useState()
@@ -14,8 +12,10 @@ const App = () => {
   }, [Cookies.get('spotifyAuthToken')])
 
   return (
-    <div className='App'>
-      <Header></Header>
+    <div>
+        <div className="d-flex justify-content-center greenColor">
+            <h1>Spotify Guesser</h1>
+        </div>
 
       {Cookies.get('spotifyAuthToken') ? (
         <div>
@@ -32,7 +32,10 @@ const App = () => {
             <SpotifyAuth
               redirectUri='http://localhost:3000/callback'
               clientID='3770ed0bc8aa4ae6ba4dd47dec8b5fcd'
-              scopes={[Scopes.userReadCurrentlyPlaying]} // either style will work
+              scopes={[Scopes.userReadCurrentlyPlaying]
+              }
+              logoClassName='logoClass'
+              btnClassName='spotifyBtn'
             />
           </div>
         )}
