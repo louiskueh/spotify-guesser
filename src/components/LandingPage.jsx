@@ -1,8 +1,10 @@
 import axios from "axios";
 import React from "react";
 import FlippingCard from './FlippingCard.jsx'
+import PropTypes from 'prop-types';
 
 class LandingPage extends React.Component {
+
   componentDidMount() {
     this.interval = setInterval(
       () => this.getCurrentlyPlaying(this.props.token),
@@ -21,17 +23,19 @@ class LandingPage extends React.Component {
       progress_ms: 0,
     };
     this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
-
+    this.getSpotifyAPI = this.getSpotifyAPI.bind(this);
   }
-
-  getCurrentlyPlaying(token) {
-    console.log("Polling for currently playing");
-    const getCurrentSpotify = axios.create({
+  getSpotifyAPI() {
+    return axios.create({
       baseURL: "https://api.spotify.com",
-      headers: { Authorization: "Bearer " + token },
+      headers: { Authorization: "Bearer " + this.props.token },
     });
 
-    getCurrentSpotify
+  }
+  getCurrentlyPlaying() {
+    console.log("Polling for currently playing");
+
+    this.getSpotifyAPI()
       .get("/v1/me/player/currently-playing")
       .then((response) => {
         console.log(response);
@@ -72,6 +76,10 @@ class LandingPage extends React.Component {
 
     );
   }
+}
+
+LandingPage.propTypes = {
+  token: PropTypes.string,
 }
 
 export default LandingPage;

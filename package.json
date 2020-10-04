@@ -11,6 +11,7 @@
     "js-cookie": "^2.2.1",
     "material-ui": "^0.20.2",
     "mdbreact": "^4.27.0",
+    "prop-types": "^15.7.2",
     "qs": "^6.9.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -39,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }

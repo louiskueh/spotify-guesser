@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import { MDBInput, MDBContainer, MDBBtn, MDBCard, MDBCardBody, MDBCardImage } from 'mdbreact';
 import { LinearProgress } from '@material-ui/core';
 import '../styles/FlippingCard.css'
+import PropTypes from 'prop-types'
+import FlippingCardFront from "./FlippingCardFront";
 class FlippingCard extends Component {
     constructor(props) {
         super(props)
         this.state = { flipped: false };
-        this.flip = this.flip.bind(this);
+        this.toggleFlip = this.toggleFlip.bind(this);
     }
-    flip = () => {
+    toggleFlip() {
         console.log('flip')
         this.setState({ flipped: !this.state.flipped });
     }
@@ -22,27 +24,9 @@ class FlippingCard extends Component {
                 justifyContent: 'center',
                 paddingTop: '7rem'
             }}>
-                <div className="card-container">
-                    <div className="front">
-                        <MDBCard style={{
-                            width: "100%",
-                            height: "100%"
-                        }}>
-                            <MDBCardImage className="img-fluid" src={this.props.item.album.images[0].url} waves />
-                            <LinearProgress variant="determinate" value={(this.props.progress_ms * 100 / this.props.item.duration_ms)} />
-                            <MDBCardBody className='cardColor'>
-                                {/* <MDBCardTitle className='whiteText'>{this.props.item.name}</MDBCardTitle>
-                        <MDBCardText className='whiteText'>
-                            {this.props.item.artists[0].name}
-                        </MDBCardText> */}
-                                <MDBInput className='whiteText' label="Guess the song!" />
-                                <MDBInput className='whiteText' label="Guess the artist!" />
-                                <div className='flip'>
-                                    <MDBBtn color='success' onClick={this.flip} onMouseLeave={this.flip} className={'whiteText' + (this.state.flipped ? "flipped" : "")}>Check</MDBBtn>
-                            </div>
-                        </MDBCardBody>
-                    </MDBCard></div>
-                <div className="back">Back Side</div>
+                <div className={"card-container" + (this.state.flipped ? " flipped" : "")}>
+                    <FlippingCardFront toggleFlip={this.toggleFlip} item={this.props.item} progress_ms={this.props.progress_ms} />
+                    <div className="back" onMouseLeave={this.toggleFlip} >Back Side</div>
                 </div>
 
 
@@ -51,5 +35,8 @@ class FlippingCard extends Component {
         );
     }
 }
-
+FlippingCard.propTypes = {
+    item: PropTypes.object,
+    progress_ms: PropTypes.number
+}
 export default FlippingCard;

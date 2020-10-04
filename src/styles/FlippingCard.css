@@ -47,11 +47,16 @@
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
-    font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: transform .8s ease;
 }
 
 
@@ -64,19 +69,6 @@
     background-image: linear-gradient(to right bottom, #f1c40f, #e67e22);
 }
 
-.card-container {
-    position: relative;
-}
-
-.front,
-.back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    overflow: hidden;
-    transition: transform .8s ease;
-}
 
 .back {
     transform: rotateY(180deg);

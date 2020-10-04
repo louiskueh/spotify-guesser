@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from 'react'
-import Cookies from 'js-cookie'
-import { MDBBtn } from 'mdbreact'
-import { SpotifyAuth, Scopes } from 'react-spotify-auth'
-import './App.css'
-import LandingPage from './components/LandingPage.jsx'
+import React, {useEffect, useState} from 'react';
+import Cookies from 'js-cookie';
+import {MDBBtn} from 'mdbreact';
+import {SpotifyAuth, Scopes} from 'react-spotify-auth';
+import './App.css';
+import LandingPage from './components/LandingPage.jsx';
 
 const App = () => {
-  const [spotifyAuthToken, setSpotifyAuthToken] = useState()
+  const [spotifyAuthToken, setSpotifyAuthToken] = useState();
   useEffect(() => {
-    setSpotifyAuthToken(Cookies.get('spotifyAuthToken'))
-  }, [Cookies.get('spotifyAuthToken')])
+    setSpotifyAuthToken(Cookies.get('spotifyAuthToken'));
+  }, [Cookies.get('spotifyAuthToken')]);
 
   const logout = () => {
     Cookies.remove('spotifyAuthToken', {
-      path: ''
-    })
-    window.location = '/'
-  }
+      path: '',
+    });
+    window.location = '/';
+  };
 
   return (
     <div>
@@ -34,12 +34,13 @@ const App = () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            paddingTop: '10rem'
+            paddingTop: '10rem',
           }}>
             <SpotifyAuth
               redirectUri='http://localhost:3000/callback'
               clientID='3770ed0bc8aa4ae6ba4dd47dec8b5fcd'
-              scopes={[Scopes.userReadCurrentlyPlaying]
+              scopes={[Scopes.userReadCurrentlyPlaying,
+                Scopes.userModifyPlaybackState]
               }
               logoClassName='logoClass'
               btnClassName='spotifyBtn'
@@ -49,8 +50,8 @@ const App = () => {
 
       {Cookies.get('spotifyAuthToken') ? <div className="logout">
         <MDBBtn color='danger' onClick={logout}>Logout</MDBBtn>
-      </div> : ("")}
+      </div> : ('')}
     </div>
-  )
-}
-export default App
+  );
+};
+export default App;
