@@ -47,7 +47,7 @@ const App = () => {
           </div>
         )}
 
-      {Cookies.get('spotifyAuthToken') ? <div className="move-to-bottom">
+      {Cookies.get('spotifyAuthToken') ? <div className="logout">
         <MDBBtn color='danger' onClick={logout}>Logout</MDBBtn>
       </div> : ("")}
     </div>
