@@ -36,7 +36,7 @@ class LandingPage extends React.Component {
       .then((response) => {
         console.log(response);
         // If we are playing something
-        if ((response.status == 200)) {
+        if ((response.status === 200)) {
           this.setState({
             item: response.data.item,
             is_playing: response.data.is_playing,

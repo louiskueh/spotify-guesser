@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MDBInput, MDBContainer, MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import { MDBInput, MDBContainer, MDBBtn, MDBCard, MDBCardBody, MDBCardImage } from 'mdbreact';
 import { LinearProgress } from '@material-ui/core';
 import '../styles/FlippingCard.css'
 class FlippingCard extends Component {
