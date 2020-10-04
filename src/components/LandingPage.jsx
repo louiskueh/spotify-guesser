@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import FlippingCard from './FlippingCard.jsx'
+import Card from './Card.jsx'
 import PropTypes from 'prop-types';
 
 class LandingPage extends React.Component {
@@ -30,7 +30,6 @@ class LandingPage extends React.Component {
       baseURL: "https://api.spotify.com",
       headers: { Authorization: "Bearer " + this.props.token },
     });
-
   }
   getCurrentlyPlaying() {
     console.log("Polling for currently playing");
@@ -63,10 +62,11 @@ class LandingPage extends React.Component {
     console.log("STATE IS " + JSON.stringify(this.state.item));
 
     return (
-      this.state.item ? <FlippingCard
+      this.state.item ? <Card
         item={this.state.item}
         is_playing={this.state.is_playing}
         progress_ms={this.state.progress_ms}
+        spotifyAPI={this.getSpotifyAPI}
       /> : <div style={{
         display: 'flex',
         alignItems: 'center',

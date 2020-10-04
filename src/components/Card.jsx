@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { MDBInput, MDBContainer, MDBBtn, MDBCard, MDBCardBody, MDBCardImage } from 'mdbreact';
 import { LinearProgress } from '@material-ui/core';
-import '../styles/FlippingCard.css'
+import '../styles/Card.css'
 import PropTypes from 'prop-types'
 import FlippingCardFront from "./FlippingCardFront";
-class FlippingCard extends Component {
+import FlippingCardBack from "./FlippingCardBack";
+class Card extends Component {
     constructor(props) {
         super(props)
         this.state = { flipped: false };
@@ -26,7 +27,10 @@ class FlippingCard extends Component {
             }}>
                 <div className={"card-container" + (this.state.flipped ? " flipped" : "")}>
                     <FlippingCardFront toggleFlip={this.toggleFlip} item={this.props.item} progress_ms={this.props.progress_ms} />
-                    <div className="back" onMouseLeave={this.toggleFlip} >Back Side</div>
+                    <FlippingCardBack 
+                        spotifyAPI={this.props.spotifyAPI}
+                        toggleFlip={this.toggleFlip}
+                    ></FlippingCardBack>
                 </div>
 
 
@@ -35,8 +39,9 @@ class FlippingCard extends Component {
         );
     }
 }
-FlippingCard.propTypes = {
+Card.propTypes = {
     item: PropTypes.object,
-    progress_ms: PropTypes.number
+    progress_ms: PropTypes.number,
+    spotifyAPI: PropTypes.func
 }
-export default FlippingCard;
+export default Card;

@@ -17,9 +17,7 @@ class FlippingCardFront extends Component {
                     <MDBCardBody className='cardColor'>
                         <MDBInput className='whiteText' label="Guess the song!" />
                         <MDBInput className='whiteText' label="Guess the artist!" />
-                        <div className='flip'>
-                            <MDBBtn color='success' onClick={this.props.toggleFlip} className="whiteText">Check</MDBBtn>
-                        </div>
+                        <MDBBtn color='success' onClick={this.props.toggleFlip} className="whiteText">Check</MDBBtn>
                     </MDBCardBody>
                 </MDBCard></div>
         );

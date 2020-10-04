@@ -1,49 +1,8 @@
-.cardColor {
-    background-color: #212121
-}
 
-.MuiLinearProgress-barColorPrimary {
-    background-color: #1DB954 !important
-}
-
-.MuiLinearProgress-colorPrimary {
-    background-color: #212121 !important
-}
-
-.whiteText {
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF
-}
-
-.md-form input[type='text']:focus:not([readonly]) {
-    font-family: 'Montserrat', sans-serif;
-    box-shadow: 0 1px 0 0 #1DB954 !important;
-    border-bottom: 1px solid #1DB954 !important;
-    font-size: large;
-}
-
-.md-form input[type='text']:focus:not([readonly])+label {
-    font-family: 'Montserrat', sans-serif;
-    color: white !important;
-}
-
-.md-form input[type='text']:focus {
-    color: white
-}
-
-.md-form label {
-    font-family: 'Montserrat' !important;
-}
-
-.card-container,
 .front,
 .back {
     width: 20rem;
     height: 40rem;
-}
-
-.front,
-.back {
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
@@ -59,16 +18,9 @@
     transition: transform .8s ease;
 }
 
-
-/* front side bg is green gradient */
-
-
-/* back side bg is orange gradient */
-
 .back {
     background-image: linear-gradient(to right bottom, #f1c40f, #e67e22);
 }
-
 
 .back {
     transform: rotateY(180deg);
@@ -80,8 +32,4 @@
 
 .flipped .back {
     transform: rotateY(0deg) !important;
-}
-
-.card-container {
-    perspective: 75rem;
 }
