@@ -39,8 +39,7 @@ const App = () => {
             <SpotifyAuth
               redirectUri='http://localhost:3000/callback'
               clientID='3770ed0bc8aa4ae6ba4dd47dec8b5fcd'
-              scopes={[Scopes.userReadCurrentlyPlaying,
-                Scopes.userModifyPlaybackState]
+              scopes={[Scopes.userReadCurrentlyPlaying]
               }
               logoClassName='logoClass'
               btnClassName='spotifyBtn'
@@ -49,7 +48,7 @@ const App = () => {
         )}
 
       {Cookies.get('spotifyAuthToken') ? <div className="logout">
-        <MDBBtn color='danger' onClick={logout}>Logout</MDBBtn>
+        <MDBBtn gradient="aqua" onClick={logout}>Logout</MDBBtn>
       </div> : ('')}
     </div>
   );

@@ -25,19 +25,19 @@ class LandingPage extends React.Component {
     this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
     this.getSpotifyAPI = this.getSpotifyAPI.bind(this);
   }
-  getSpotifyAPI() {
+  getSpotifyAPI(token) {
     return axios.create({
       baseURL: "https://api.spotify.com",
-      headers: { Authorization: "Bearer " + this.props.token },
+      headers: { Authorization: "Bearer " + token},
     });
   }
   getCurrentlyPlaying() {
-    console.log("Polling for currently playing");
+    //console.log("Polling for currently playing");
 
-    this.getSpotifyAPI()
+    this.getSpotifyAPI(this.props.token)
       .get("/v1/me/player/currently-playing")
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         // If we are playing something
         if ((response.status === 200)) {
           this.setState({
@@ -59,14 +59,13 @@ class LandingPage extends React.Component {
   }
 
   render() {
-    console.log("STATE IS " + JSON.stringify(this.state.item));
+    // console.log("STATE IS " + JSON.stringify(this.state.item));
 
     return (
       this.state.item ? <Card
         item={this.state.item}
         is_playing={this.state.is_playing}
         progress_ms={this.state.progress_ms}
-        spotifyAPI={this.getSpotifyAPI}
       /> : <div style={{
         display: 'flex',
         alignItems: 'center',
