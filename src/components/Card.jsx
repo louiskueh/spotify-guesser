@@ -28,6 +28,7 @@ class Card extends Component {
                 <div className={"card-container" + (this.state.flipped ? " flipped" : "")}>
                     <FlippingCardFront toggleFlip={this.toggleFlip} item={this.props.item} progress_ms={this.props.progress_ms} />
                     <FlippingCardBack      
+                        item = {this.props.item}
                         toggleFlip={this.toggleFlip}
                     ></FlippingCardBack>
                 </div>

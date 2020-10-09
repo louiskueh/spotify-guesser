@@ -9,6 +9,11 @@ class FlippingCardBack extends Component {
         return (
             <div className="back" onMouseLeave={this.props.toggleFlip}  >
                 Back Side
+                <MDBCardBody className='cardColor'>
+                        <MDBInput className='whiteText' label="Guess the song!" />
+                        <MDBInput className='whiteText' label="Guess the artist!" />
+                        <MDBBtn color='success' onClick={this.props.toggleFlip} className="whiteText">Check</MDBBtn>
+                    </MDBCardBody>
                 <MDBBtn color='success' onClick={this.props.toggleFlip} className="whiteText">Back</MDBBtn>          
             </div>
 
@@ -17,7 +22,7 @@ class FlippingCardBack extends Component {
 }
 FlippingCardBack.propTypes = {
     toggleFlip: PropTypes.func,
-    spotifyAPI: PropTypes.func
+    item: PropTypes.object
 
 }
 export default FlippingCardBack;
