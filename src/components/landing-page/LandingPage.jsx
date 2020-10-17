@@ -59,7 +59,7 @@ class LandingPage extends React.Component {
   }
 
   render() {
-    // console.log("STATE IS " + JSON.stringify(this.state.item));
+    //  console.log("STATE IS " + JSON.stringify(this.state.item));
 
     return (
       this.state.item ? <Card
