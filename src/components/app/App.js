@@ -1,15 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
-import {MDBBtn} from 'mdbreact';
-import {SpotifyAuth, Scopes} from 'react-spotify-auth';
+import { MDBBtn } from 'mdbreact';
+import { SpotifyAuth, Scopes } from 'react-spotify-auth';
 import './App.css';
 import LandingPage from '../landing-page/LandingPage.jsx';
 
 const App = () => {
   const [spotifyAuthToken, setSpotifyAuthToken] = useState();
+  const getSpotifyAuthToken = Cookies.get('spotifyAuthToken')
   useEffect(() => {
-    setSpotifyAuthToken(Cookies.get('spotifyAuthToken'));
-  }, [Cookies.get('spotifyAuthToken')]);
+    setSpotifyAuthToken(getSpotifyAuthToken);
+  }, [getSpotifyAuthToken]);
 
   const logout = () => {
     Cookies.remove('spotifyAuthToken', {
