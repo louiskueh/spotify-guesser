@@ -1,7 +1,7 @@
 import axios from "axios";
-import React from "react";
-import Card from './Card.jsx'
 import PropTypes from 'prop-types';
+import React from "react";
+import Card from '../card/Card.jsx';
 
 class LandingPage extends React.Component {
 

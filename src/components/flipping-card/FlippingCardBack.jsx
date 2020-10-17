@@ -1,8 +1,7 @@
+import { MDBBtn, MDBCardBody, MDBInput } from 'mdbreact';
+import PropTypes from 'prop-types';
 import React, { Component } from "react";
-import { MDBInput, MDBContainer, MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
-import { LinearProgress } from '@material-ui/core';
-import '../styles/FlippingCard.css'
-import PropTypes from 'prop-types'
+import './FlippingCard.css';
 class FlippingCardBack extends Component {
  
     render() {

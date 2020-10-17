@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 import {MDBBtn} from 'mdbreact';
 import {SpotifyAuth, Scopes} from 'react-spotify-auth';
 import './App.css';
-import LandingPage from './components/LandingPage.jsx';
+import LandingPage from '../landing-page/LandingPage.jsx';
 
 const App = () => {
   const [spotifyAuthToken, setSpotifyAuthToken] = useState();
