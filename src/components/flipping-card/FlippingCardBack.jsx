@@ -1,3 +1,4 @@
+import { green } from "@material-ui/core/colors";
 import { MDBBtn, MDBCardBody, MDBInput } from "mdbreact";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
@@ -18,7 +19,6 @@ class FlippingCardBack extends Component {
     let dif = 0;
     let actualDict = this.countLetters(actual);
     let inputDict = this.countLetters(input);
-
     for (const [key, value] of Object.entries(actualDict)) {
       if (key in inputDict) {
         dif += value - inputDict[key];
@@ -27,21 +27,15 @@ class FlippingCardBack extends Component {
       }
       sum += value;
     }
-
     return ((sum - dif) / sum) * 100;
   }
+
   render() {
     if (this.props.item) {
       console.log(
         this.calculateSimilar(this.artistName, this.props.artistName) +
           "% similar"
       );
-
-      if ( this.calculateSimilar(this.artistName, this.props.artistName) == 100){
-        this.displayConfetti()
-      }
-      // console.log("Artist Name is " + this.artistName)
-      // console.log("Song Name is " + this.songName);
     }
 
     return (
@@ -49,22 +43,28 @@ class FlippingCardBack extends Component {
         Back Side
         <MDBCardBody className="cardColor">
           <MDBInput
+            hint={ this.songName}
             className="whiteText"
-            label={this.songName}
+            label="Song Name"
             disabled={true}
+            containerClass="text-left"
+            icon="music"
+            color={green}
           />
           <MDBInput
+            hint= {this.artistName}
             className="whiteText"
-            label={this.artistName}
+            label="Artist Name"
+            labelId="artist"
+            icon="user"
             disabled={true}
+            containerClass="text-left"
           />
-          <MDBBtn
-            color="success"
-            onClick={this.props.toggleFlip}
-            className="whiteText"
-          >
-            Check
-          </MDBBtn>
+          // TODO:
+          // Run analysis once only
+          // Fix colours of text
+  
+      
         </MDBCardBody>
         <MDBBtn
           color="success"
