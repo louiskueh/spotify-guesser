@@ -6,7 +6,7 @@
   border-radius: 4px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
   font-size: 2rem;
-  color: #fff;
+
   text-transform: uppercase;
   text-align: center;
   position: absolute;
@@ -18,7 +18,6 @@
 }
 
 .back {
-  background-image: linear-gradient(to right bottom, #f1c40f, #e67e22);
   color: #1DB954 
 }
 

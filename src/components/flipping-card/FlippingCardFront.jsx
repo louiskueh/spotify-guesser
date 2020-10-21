@@ -39,7 +39,7 @@ class FlippingCardFront extends Component {
             variant="determinate"
             value={(this.props.progress_ms * 100) / this.props.item.duration_ms}
           />
-          <MDBCardBody className="cardColor">
+          <MDBCardBody>
             <MDBInput
               name="songName"
               value={this.state.songName}
