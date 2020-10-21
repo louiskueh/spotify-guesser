@@ -1,6 +1,6 @@
-.cardColor {
+/* .cardColor {
     background-color: #212121
-}
+} */
 
 .MuiLinearProgress-barColorPrimary {
     background-color: #1DB954 !important
@@ -11,11 +11,10 @@
 }
 
 .whiteText {
-    font-family: 'Montserrat', sans-serif;
     color: #FFFFFF
 }
 
-.md-form input[type='text']:focus:not([readonly]) {
+/* .md-form input[type='text']:focus:not([readonly]) {
     font-family: 'Montserrat', sans-serif;
     box-shadow: 0 1px 0 0 #1DB954 !important;
     border-bottom: 1px solid #1DB954 !important;
@@ -33,7 +32,7 @@
 
 .md-form label {
     font-family: 'Montserrat' !important;
-}
+} */
 
 .card-container{
     width: 20rem;

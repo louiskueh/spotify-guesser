@@ -17,53 +17,46 @@ class FlippingCardFront extends Component {
   }
 
   handleSubmit(event) {
-    this.props.toggleFlip()
-    this.props.setUserInput(this.state.songName, this.state.artistName)
+    this.props.toggleFlip();
+    this.props.setUserInput(this.state.songName, this.state.artistName);
   }
 
   render() {
     return (
-      <div className="front">
-        <MDBCard
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
-        >
-          <MDBCardImage
-            className="img-fluid"
-            src={this.props.item.album.images[0].url}
-            waves
+      <MDBCard className="front">
+        <MDBCardImage
+          className="img-fluid"
+          src={this.props.item.album.images[0].url}
+          waves
+        />
+        <LinearProgress
+          variant="determinate"
+          value={(this.props.progress_ms * 100) / this.props.item.duration_ms}
+        />
+        <MDBCardBody>
+          <MDBInput
+            name="songName"
+            value={this.state.songName}
+            onChange={this.handleChange}
+            className="whiteText"
+            label="Guess the song!"
           />
-          <LinearProgress
-            variant="determinate"
-            value={(this.props.progress_ms * 100) / this.props.item.duration_ms}
+          <MDBInput
+            name="artistName"
+            value={this.state.artistName}
+            onChange={this.handleChange}
+            className="whiteText"
+            label="Guess the artist!"
           />
-          <MDBCardBody>
-            <MDBInput
-              name="songName"
-              value={this.state.songName}
-              onChange={this.handleChange}
-              className="whiteText"
-              label="Guess the song!"
-            />
-            <MDBInput
-              name="artistName"
-              value={this.state.artistName}
-              onChange={this.handleChange}
-              className="whiteText"
-              label="Guess the artist!"
-            />
-            <MDBBtn
-              color="success"
-              onClick={this.handleSubmit}
-              className="whiteText"
-            >
-              Check
-            </MDBBtn>
-          </MDBCardBody>
-        </MDBCard>
-      </div>
+          <MDBBtn
+            color="success"
+            onClick={this.handleSubmit}
+            className="whiteText"
+          >
+            Check
+          </MDBBtn>
+        </MDBCardBody>
+      </MDBCard>
     );
   }
 }
@@ -71,6 +64,6 @@ FlippingCardFront.propTypes = {
   item: PropTypes.object,
   progress_ms: PropTypes.number,
   toggleFlip: PropTypes.func,
-  setUserInput: PropTypes.func
+  setUserInput: PropTypes.func,
 };
 export default FlippingCardFront;
