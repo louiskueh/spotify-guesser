@@ -39,10 +39,11 @@ class Card extends Component {
             progress_ms={this.props.progress_ms}
           />
           <FlippingCardBack
-            item={this.props.item}
             toggleFlip={this.toggleFlip}
-            songName={this.state.songName}
-            artistName={this.state.artistName}
+            inputSongName={this.state.songName}
+            inputArtistName={this.state.artistName}
+            songName={this.props.item.name}
+            artistName={this.props.item.album.artists[0].name}
           ></FlippingCardBack>
         </div>
       </MDBContainer>

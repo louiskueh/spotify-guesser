@@ -4,8 +4,17 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import "./FlippingCard.css";
 class FlippingCardBack extends Component {
-  artistName = this.props.item.album.artists[0].name;
-  songName = this.props.item.name;
+
+  constructor(props) {
+    super(props);
+    console.log("Constructor called")
+  }
+  componentDidUpdate(prevProps) {
+    // Typical usage (don't forget to compare props):
+    if (this.props.userID !== prevProps.userID) {
+      this.fetchData(this.props.userID);
+    }
+  }
 
   countLetters(input) {
     var dict = {};
@@ -15,6 +24,7 @@ class FlippingCardBack extends Component {
     return dict;
   }
   calculateSimilar(actual, input) {
+    if (actual === undefined || input === undefined) return 0
     let sum = 0;
     let dif = 0;
     let actualDict = this.countLetters(actual);
@@ -31,19 +41,15 @@ class FlippingCardBack extends Component {
   }
 
   render() {
-    if (this.props.item) {
-      console.log(
-        this.calculateSimilar(this.artistName, this.props.artistName) +
-          "% similar"
-      );
-    }
-
+    // TODO:
+    // Run analysis once only
+    // Fix colours of text
     return (
-      <div className="back" >
+      <div className="back">
         Back Side
         <MDBCardBody className="cardColor">
           <MDBInput
-            hint={ this.songName}
+            hint={this.props.songName}
             className="whiteText"
             label="Song Name"
             disabled={true}
@@ -52,7 +58,7 @@ class FlippingCardBack extends Component {
             color={green}
           />
           <MDBInput
-            hint= {this.artistName}
+            hint={this.props.artistName}
             className="whiteText"
             label="Artist Name"
             labelId="artist"
@@ -60,11 +66,26 @@ class FlippingCardBack extends Component {
             disabled={true}
             containerClass="text-left"
           />
-          // TODO:
-          // Run analysis once only
-          // Fix colours of text
-  
-      
+          <MDBInput
+            hint={this.props.inputSongName !== undefined? this.props.inputSongName  : "NO SONG INPUTTED"}
+            className="whiteText"
+            label={"Your Song Guess " + this.calculateSimilar(this.songName,this.inputSongName) +  "% similar"}
+            labelId="artist"
+            icon="music"
+            disabled={true}
+            containerClass="text-left"
+          />
+
+          <MDBInput
+            hint={this.props.inputArtistName !== undefined ?this.props.inputArtistName : "NO ARTIST INPUTTED"}
+            className="whiteText"
+            label={"Your Artist Guess " + this.calculateSimilar(this.artistName,this.inputArtistName) +  "% similar"}
+            labelId="artist"
+            icon="user"
+            disabled={true}
+            containerClass="text-left"
+          />
+
         </MDBCardBody>
         <MDBBtn
           color="success"
@@ -79,8 +100,9 @@ class FlippingCardBack extends Component {
 }
 FlippingCardBack.propTypes = {
   toggleFlip: PropTypes.func,
-  item: PropTypes.object,
   artistName: PropTypes.string,
   songName: PropTypes.string,
+  inputArtistName: PropTypes.string,
+  inputSongName: PropTypes.string
 };
 export default FlippingCardBack;
