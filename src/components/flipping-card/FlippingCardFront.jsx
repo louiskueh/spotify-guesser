@@ -21,7 +21,6 @@ class FlippingCardFront extends Component {
     this.props.setUserInput(this.state.songName, this.state.artistName);
   }
   
- 
   render() {
     return (
       <MDBCard className="front">
@@ -49,13 +48,12 @@ class FlippingCardFront extends Component {
             className="whiteText"
             label="Guess the artist!"
           />
-          <MDBBtn
-            color="success"
+          <button
             onClick={this.handleSubmit}
-            className="whiteText"
+            className="buttonClass"
           >
             Check
-          </MDBBtn>
+          </button>
         </MDBCardBody>
       </MDBCard>
     );

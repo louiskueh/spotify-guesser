@@ -64,13 +64,12 @@ class FlippingCardBack extends Component {
             containerClass="text-left"
           />
         </MDBCardBody>
-        <MDBBtn
-          color="success"
+        <button
           onClick={this.props.toggleFlip}
-          className="whiteText"
+          className="buttonClass"
         >
           Back
-        </MDBBtn>
+        </button>
       </div>
     );
   }

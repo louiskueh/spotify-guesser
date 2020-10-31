@@ -16,6 +16,23 @@
   transition: transform 0.8s ease;
 }
 
+.buttonClass{
+  background-color: #1DB954;
+  color: #ecf0f1;
+  border-radius: 66px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 32px;
+  box-shadow: none;
+  border: none;
+}
+.buttonClass:focus{
+  outline: #ecf0f1
+}
+.buttonClass:active { 
+  transform: scale(0.9); 
+}
+
 .back {
   color: #1DB954 
 }
