@@ -26,7 +26,6 @@ class Card extends Component {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          paddingTop: "7rem",
         }}
       >
         <div

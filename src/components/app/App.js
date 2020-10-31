@@ -9,7 +9,7 @@ const App = () => {
   const [spotifyAuthToken, setSpotifyAuthToken] = useState();
   const getSpotifyAuthToken = Cookies.get('spotifyAuthToken')
   useEffect(() => {
-    setSpotifyAuthToken(getSpotifyAuthToken);
+    setSpotifyAuthToken( Cookies.get('spotifyAuthToken'));
   }, [getSpotifyAuthToken]);
 
   const logout = () => {
@@ -21,11 +21,11 @@ const App = () => {
 
   return (
     <div>
-      <div className="d-flex justify-content-center greenColor">
+      <div className="spotifyHeading">
         <h1>Spotify Guesser</h1>
       </div>
-
       {Cookies.get('spotifyAuthToken') ? (
+        
         <div>
           <LandingPage token={spotifyAuthToken}></LandingPage>
         </div>

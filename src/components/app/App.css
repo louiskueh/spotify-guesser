@@ -1,8 +1,13 @@
 
-.greenColor {
-    color: #1DB954
+
+.spotifyHeading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #1DB954
 }
- 
+
 .logout{
   position:fixed;
   right:1rem;
