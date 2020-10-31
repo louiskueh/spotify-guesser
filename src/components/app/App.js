@@ -4,7 +4,7 @@ import { MDBBtn } from 'mdbreact';
 import { SpotifyAuth, Scopes } from 'react-spotify-auth';
 import './App.css';
 import LandingPage from '../landing-page/LandingPage.jsx';
-
+import 'react-spotify-auth/dist/index.css'
 const App = () => {
   const [spotifyAuthToken, setSpotifyAuthToken] = useState();
   const getSpotifyAuthToken = Cookies.get('spotifyAuthToken')
@@ -42,8 +42,7 @@ const App = () => {
               clientID='3770ed0bc8aa4ae6ba4dd47dec8b5fcd'
               scopes={[Scopes.userReadCurrentlyPlaying]
               }
-              logoClassName='logoClass'
-              btnClassName='spotifyBtn'
+ 
             />
           </div>
         )}
