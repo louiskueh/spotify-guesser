@@ -20,7 +20,8 @@ class FlippingCardFront extends Component {
     this.props.toggleFlip();
     this.props.setUserInput(this.state.songName, this.state.artistName);
   }
-
+  
+ 
   render() {
     return (
       <MDBCard className="front">

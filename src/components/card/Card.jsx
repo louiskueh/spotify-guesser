@@ -7,18 +7,63 @@ import FlippingCardFront from "../flipping-card/FlippingCardFront";
 class Card extends Component {
   constructor(props) {
     super(props);
-    this.state = { flipped: false, songName: "", artistName: "" }
-    this.toggleFlip = this.toggleFlip.bind(this)
-    this.setUserInput = this.setUserInput.bind(this)
+    this.state = {
+      flipped: false,
+      songName: "",
+      artistName: "",
+      songSimilarity: 0,
+      artistSimilarity: 0,
+    };
+    this.toggleFlip = this.toggleFlip.bind(this);
+    this.setUserInput = this.setUserInput.bind(this);
   }
   toggleFlip() {
     console.log("flip");
-    this.setState({ flipped: !this.state.flipped })
+    this.setState({ flipped: !this.state.flipped });
   }
   setUserInput(_songName, _artistName) {
-      this.setState({songName: _songName, artistName: _artistName })
+    this.setState({
+      songName: _songName,
+      artistName: _artistName,
+      songSimilarity: this.calculateSimilar(this.props.item.name, _songName),
+      artistSimilarity: this.calculateSimilar(
+        this.props.item.album.artists[0].name,
+        _artistName
+      ),
+    });
   }
 
+  countLetters(input) {
+    var dict = {};
+    for (const letter of input) {
+      dict[letter] = (dict[letter] || 0) + 1;
+    }
+    return dict;
+  }
+  calculateSimilar(actual, input) {
+    console.log("Inside clacualte similar");
+    if (actual === undefined || input === undefined) return 0;
+    let sum = 0;
+    let dif = 0;
+    console.log("actual is " + actual);
+    console.log("input is " + input);
+    let actualDict = this.countLetters(actual.toLowerCase());
+    let inputDict = this.countLetters(input.toLowerCase());
+    console.log("dict is + " + actual + " " + JSON.stringify(actualDict));
+    console.log("inputDict is " + input + " " + JSON.stringify(inputDict));
+
+
+    for (const [key, value] of Object.entries(actualDict)) {
+      if (key in inputDict) {
+        dif += Math.abs(value - inputDict[key]);
+      } else {
+        dif += value;
+      }
+      sum += value;
+    }
+
+    return Math.round(((sum - dif) / sum) * 100);
+  }
   render() {
     return (
       <MDBContainer
@@ -43,6 +88,8 @@ class Card extends Component {
             inputArtistName={this.state.artistName}
             songName={this.props.item.name}
             artistName={this.props.item.album.artists[0].name}
+            songSimilarity={this.state.songSimilarity}
+            artistSimilarity={this.state.artistSimilarity}
           ></FlippingCardBack>
         </div>
       </MDBContainer>

@@ -3,9 +3,7 @@
     background-color: #1DB954 !important
 }
 
-.whiteText {
-    color: #FFFFFF
-}
+
 
 .md-form input[type='text']:focus:not([readonly]) {
     font-family: 'Montserrat', sans-serif;
@@ -19,9 +17,9 @@
     color: #1DB954 !important;
 } 
 
-.md-form input[type='text']:focus {
-    color: white
-}
+    /* .md-form input[type='text']:focus {
+        color: white
+    } */
 
 .md-form label {
     font-family: 'Montserrat' !important;

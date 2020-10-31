@@ -4,45 +4,8 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 import "./FlippingCard.css";
 class FlippingCardBack extends Component {
-  constructor(props) {
-    super(props);
-    console.log("Constructor called");
-  }
-  componentDidUpdate(prevProps) {
-    // Typical usage (don't forget to compare props):
-    if (this.props.userID !== prevProps.userID) {
-      this.fetchData(this.props.userID);
-    }
-  }
-
-  countLetters(input) {
-    var dict = {};
-    for (const letter of input) {
-      dict[letter] = (dict[letter] || 0) + 1;
-    }
-    return dict;
-  }
-  calculateSimilar(actual, input) {
-    if (actual === undefined || input === undefined) return 0;
-    let sum = 0;
-    let dif = 0;
-    let actualDict = this.countLetters(actual);
-    let inputDict = this.countLetters(input);
-    for (const [key, value] of Object.entries(actualDict)) {
-      if (key in inputDict) {
-        dif += value - inputDict[key];
-      } else {
-        dif += value;
-      }
-      sum += value;
-    }
-    return ((sum - dif) / sum) * 100;
-  }
 
   render() {
-    // TODO:
-    // Run analysis once only
-    // Fix colours of text
     return (
       <div className="back">
         Back Side
@@ -74,7 +37,7 @@ class FlippingCardBack extends Component {
             className="whiteText"
             label={
               "Your Song Guess " +
-              this.calculateSimilar(this.songName, this.inputSongName) +
+              this.props.songSimilarity +
               "% similar"
             }
             labelId="artist"
@@ -92,7 +55,7 @@ class FlippingCardBack extends Component {
             className="whiteText"
             label={
               "Your Artist Guess " +
-              this.calculateSimilar(this.artistName, this.inputArtistName) +
+              this.props.artistSimilarity +
               "% similar"
             }
             labelId="artist"
@@ -118,5 +81,7 @@ FlippingCardBack.propTypes = {
   songName: PropTypes.string,
   inputArtistName: PropTypes.string,
   inputSongName: PropTypes.string,
+  artistSimilarity: PropTypes.number,
+  songSimilarity: PropTypes.number
 };
 export default FlippingCardBack;
