@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/artist-guesser-spotify/static/css/main.97ea89cf.chunk.css",
+    "main.js": "/artist-guesser-spotify/static/js/main.e045446a.chunk.js",
+    "main.js.map": "/artist-guesser-spotify/static/js/main.e045446a.chunk.js.map",
+    "runtime-main.js": "/artist-guesser-spotify/static/js/runtime-main.2be2aa01.js",
+    "runtime-main.js.map": "/artist-guesser-spotify/static/js/runtime-main.2be2aa01.js.map",
+    "static/css/2.60604e42.chunk.css": "/artist-guesser-spotify/static/css/2.60604e42.chunk.css",
+    "static/js/2.b928446b.chunk.js": "/artist-guesser-spotify/static/js/2.b928446b.chunk.js",
+    "static/js/2.b928446b.chunk.js.map": "/artist-guesser-spotify/static/js/2.b928446b.chunk.js.map",
+    "index.html": "/artist-guesser-spotify/index.html",
+    "precache-manifest.23df3bf2e7d675de535e95b65fb492ea.js": "/artist-guesser-spotify/precache-manifest.23df3bf2e7d675de535e95b65fb492ea.js",
+    "service-worker.js": "/artist-guesser-spotify/service-worker.js",
+    "static/css/2.60604e42.chunk.css.map": "/artist-guesser-spotify/static/css/2.60604e42.chunk.css.map",
+    "static/css/main.97ea89cf.chunk.css.map": "/artist-guesser-spotify/static/css/main.97ea89cf.chunk.css.map",
+    "static/js/2.b928446b.chunk.js.LICENSE.txt": "/artist-guesser-spotify/static/js/2.b928446b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2be2aa01.js",
+    "static/css/2.60604e42.chunk.css",
+    "static/js/2.b928446b.chunk.js",
+    "static/css/main.97ea89cf.chunk.css",
+    "static/js/main.e045446a.chunk.js"
+  ]
+}
