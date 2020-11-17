@@ -38,7 +38,7 @@ const App = () => {
             paddingTop: '10rem',
           }}>
             <SpotifyAuth
-              redirectUri='http://localhost:3000/callback'
+              redirectUri='https://louiskueh.com/artist-guesser-spotify/callback'
               clientID='3770ed0bc8aa4ae6ba4dd47dec8b5fcd'
               scopes={[Scopes.userReadCurrentlyPlaying]
               }

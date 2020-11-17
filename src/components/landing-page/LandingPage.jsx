@@ -32,8 +32,6 @@ class LandingPage extends React.Component {
     });
   }
   getCurrentlyPlaying() {
-    //console.log("Polling for currently playing");
-
     this.getSpotifyAPI(this.props.token)
       .get("/v1/me/player/currently-playing")
       .then((response) => {
