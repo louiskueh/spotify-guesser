@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "245f9c9ebff2f2251de5b52dfcea4dd4",
+    "revision": "de9888dc7ba44efbc46eda70e50f7da5",
     "url": "/artist-guesser-spotify/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/artist-guesser-spotify/static/css/2.60604e42.chunk.css"
   },
   {
-    "revision": "95cc2737e2adec96b418",
+    "revision": "48615ad1272d6dbd7b1c",
     "url": "/artist-guesser-spotify/static/css/main.97ea89cf.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/artist-guesser-spotify/static/js/2.c0ada8e4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "95cc2737e2adec96b418",
-    "url": "/artist-guesser-spotify/static/js/main.2c566d3d.chunk.js"
+    "revision": "48615ad1272d6dbd7b1c",
+    "url": "/artist-guesser-spotify/static/js/main.20ab005a.chunk.js"
   },
   {
     "revision": "f5bdac3d701c65486010",
