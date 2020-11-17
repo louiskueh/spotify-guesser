@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/artist-guesser-spotify/precache-manifest.23df3bf2e7d675de535e95b65fb492ea.js"
+  "/artist-guesser-spotify/precache-manifest.018a3f351d409e4e60df3b8d46b22a6b.js"
 );
 
 self.addEventListener('message', (event) => {
