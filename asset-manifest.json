@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/artist-guesser-spotify/static/css/main.97ea89cf.chunk.css",
-    "main.js": "/artist-guesser-spotify/static/js/main.d14b9c86.chunk.js",
-    "main.js.map": "/artist-guesser-spotify/static/js/main.d14b9c86.chunk.js.map",
+    "main.js": "/artist-guesser-spotify/static/js/main.2115263d.chunk.js",
+    "main.js.map": "/artist-guesser-spotify/static/js/main.2115263d.chunk.js.map",
     "runtime-main.js": "/artist-guesser-spotify/static/js/runtime-main.2be2aa01.js",
     "runtime-main.js.map": "/artist-guesser-spotify/static/js/runtime-main.2be2aa01.js.map",
     "static/css/2.60604e42.chunk.css": "/artist-guesser-spotify/static/css/2.60604e42.chunk.css",
     "static/js/2.a1453425.chunk.js": "/artist-guesser-spotify/static/js/2.a1453425.chunk.js",
     "static/js/2.a1453425.chunk.js.map": "/artist-guesser-spotify/static/js/2.a1453425.chunk.js.map",
     "index.html": "/artist-guesser-spotify/index.html",
-    "precache-manifest.9f8c9120172a9b506c3e8cfa7137cb9f.js": "/artist-guesser-spotify/precache-manifest.9f8c9120172a9b506c3e8cfa7137cb9f.js",
+    "precache-manifest.9326ee1b9bea1b25220dfa49bae59b94.js": "/artist-guesser-spotify/precache-manifest.9326ee1b9bea1b25220dfa49bae59b94.js",
     "service-worker.js": "/artist-guesser-spotify/service-worker.js",
     "static/css/2.60604e42.chunk.css.map": "/artist-guesser-spotify/static/css/2.60604e42.chunk.css.map",
     "static/css/main.97ea89cf.chunk.css.map": "/artist-guesser-spotify/static/css/main.97ea89cf.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.60604e42.chunk.css",
     "static/js/2.a1453425.chunk.js",
     "static/css/main.97ea89cf.chunk.css",
-    "static/js/main.d14b9c86.chunk.js"
+    "static/js/main.2115263d.chunk.js"
   ]
 }
