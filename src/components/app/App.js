@@ -38,7 +38,7 @@ const App = () => {
             paddingTop: '10rem',
           }}>
             <SpotifyAuth
-              redirectUri='https://louiskueh.com/artist-guesser-spotify/callback'
+              redirectUri='https://artist-guesser-spotify.netlify.app/play'
               clientID='3770ed0bc8aa4ae6ba4dd47dec8b5fcd'
               scopes={[Scopes.userReadCurrentlyPlaying]
               }
