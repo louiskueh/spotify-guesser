@@ -1,5 +1,5 @@
 import { green } from "@material-ui/core/colors";
-import { MDBBtn, MDBCardBody, MDBInput } from "mdbreact";
+import { MDBCardBody, MDBInput } from "mdbreact";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import "./FlippingCard.css";
