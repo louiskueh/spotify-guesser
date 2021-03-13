@@ -1,5 +1,5 @@
 import { LinearProgress } from "@material-ui/core";
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBInput } from "mdbreact";
+import { MDBCard, MDBCardBody, MDBCardImage, MDBInput } from "mdbreact";
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 import "./FlippingCard.css";
