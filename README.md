@@ -1,5 +1,5 @@
 
-# SPOTIFY GUESSING GAME 
+# Spotify guessing game - https://spotify-guesser.louiskueh.com/
 ![spotify-guesser](https://louiskueh.com/static/media/spotify.0c2e2c88.gif)
 
 **React** web application that tracks Spotify songs in real-time through the Spotify API
