@@ -6,5 +6,5 @@
 
 A guessing game feature where the artist and song name can be input and scored, based on the currently playing song
 
-Build in  Node, Express | React | Netlify, Spotify API 
+Build in  Node, Express | React | Netlify, Spotify API  
 
