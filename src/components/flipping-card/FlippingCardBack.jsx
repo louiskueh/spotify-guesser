@@ -36,7 +36,7 @@ class FlippingCardBack extends Component {
             }
             className="whiteText"
             label={
-              "Your Song Guess " +
+              "Song - " +
               this.props.songSimilarity +
               "% similar"
             }
@@ -54,7 +54,7 @@ class FlippingCardBack extends Component {
             }
             className="whiteText"
             label={
-              "Your Artist Guess " +
+              "Artist - " +
               this.props.artistSimilarity +
               "% similar"
             }

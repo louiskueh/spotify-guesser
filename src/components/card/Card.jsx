@@ -41,17 +41,12 @@ class Card extends Component {
     return dict;
   }
   calculateSimilar(actual, input) {
-    console.log("Inside clacualte similar");
     if (actual === undefined || input === undefined) return 0;
+
     let sum = 0;
     let dif = 0;
-    console.log("actual is " + actual);
-    console.log("input is " + input);
     let actualDict = this.countLetters(actual.toLowerCase());
     let inputDict = this.countLetters(input.toLowerCase());
-    console.log("dict is + " + actual + " " + JSON.stringify(actualDict));
-    console.log("inputDict is " + input + " " + JSON.stringify(inputDict));
-
 
     for (const [key, value] of Object.entries(actualDict)) {
       if (key in inputDict) {

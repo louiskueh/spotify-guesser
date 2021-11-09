@@ -2,7 +2,7 @@ import axios from "axios";
 import PropTypes from 'prop-types';
 import React from "react";
 import Card from '../card/Card.jsx';
-
+import "./LandingPage.css";
 class LandingPage extends React.Component {
 
   componentDidMount() {
@@ -59,11 +59,14 @@ class LandingPage extends React.Component {
   render() {
 
     return (
-      this.state.item ? <Card
-        item={this.state.item}
-        is_playing={this.state.is_playing}
-        progress_ms={this.state.progress_ms}
-      /> : <div style={{
+      this.state.item ? 
+      <div className="mainCard">
+        <Card
+          item={this.state.item}
+          is_playing={this.state.is_playing}
+          progress_ms={this.state.progress_ms}
+        />
+      </div> : <div style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
