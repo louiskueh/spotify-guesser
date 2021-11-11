@@ -1,0 +1,38 @@
+{
+  "packageId": "com.louiskueh.spotify_guesser.twa",
+  "host": "spotify-guesser.louiskueh.com",
+  "name": "Artist-guesser Spotify",
+  "launcherName": "sptftgsr",
+  "display": "fullscreen",
+  "themeColor": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#FFFFFF",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://spotify-guesser.louiskueh.com/img/spotify-guesser.png",
+  "maskableIconUrl": "https://spotify-guesser.louiskueh.com/img/spotify-guesser.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "src/keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://spotify-guesser.louiskueh.com/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "orientation": "default",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "appVersion": "1"
+}

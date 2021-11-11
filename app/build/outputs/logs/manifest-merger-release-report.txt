@@ -1,0 +1,281 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+MERGED from [com.google.androidbrowserhelper:androidbrowserhelper:2.3.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/572def1352afcb56982bb86acf89682d/androidbrowserhelper-2.3.0/AndroidManifest.xml:17:1-36:12
+MERGED from [androidx.browser:browser:1.4.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/b76183546e9802347e4b2c9dd5e9649b/browser-1.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/90ecde5404179819368e2359ab771b50/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/722883bbeda4a23af2c332d7342ff3d3/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1fed12a61eaf3956026778ada29c2705/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+	package
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:23:5-48
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:1-170:12
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:22:11-69
+application
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:29:5-169:19
+MERGED from [androidx.core:core:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/90ecde5404179819368e2359ab771b50/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/90ecde5404179819368e2359ab771b50/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:37:9-35
+	android:label
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:33:9-40
+	android:manageSpaceActivity
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:35:9-105
+	android:icon
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:32:9-43
+	android:allowBackup
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:31:9-35
+	android:theme
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:38:9-68
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:30:9-35
+meta-data#asset_statements
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:40:9-42:58
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:42:13-55
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:41:13-44
+meta-data#web_manifest_url
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:45:13-47:58
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:47:17-55
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:46:17-48
+meta-data#twa_generator
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:50:9-52:52
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:52:13-49
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:51:13-41
+activity#com.google.androidbrowserhelper.trusted.ManageDataLauncherActivity
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:55:13-59:24
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:55:23-104
+meta-data#android.support.customtabs.trusted.MANAGE_SPACE_URL
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:56:13-58:53
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:58:17-50
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:57:17-83
+activity#com.louiskueh.spotify_guesser.twa.LauncherActivity
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:62:9-134:20
+	android:label
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:64:13-49
+	android:exported
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:65:13-36
+	android:alwaysRetainTaskState
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:63:13-49
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:62:19-50
+meta-data#android.support.customtabs.trusted.DEFAULT_URL
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:66:13-67:53
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:67:17-50
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:66:24-85
+meta-data#android.support.customtabs.trusted.STATUS_BAR_COLOR
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:69:13-71:58
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:71:17-55
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:70:17-83
+meta-data#android.support.customtabs.trusted.NAVIGATION_BAR_COLOR
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:73:13-75:61
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:75:17-58
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:74:17-87
+meta-data#android.support.customtabs.trusted.NAVIGATION_BAR_COLOR_DARK
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:77:13-79:65
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:79:17-62
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:78:17-92
+meta-data#androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:81:13-83:68
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:83:17-65
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:82:17-84
+meta-data#androix.browser.trusted.NAVIGATION_BAR_DIVIDER_COLOR_DARK
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:85:13-87:72
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:87:17-69
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:86:17-89
+meta-data#android.support.customtabs.trusted.SPLASH_IMAGE_DRAWABLE
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:89:13-90:54
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:90:17-52
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:89:24-95
+meta-data#android.support.customtabs.trusted.SPLASH_SCREEN_BACKGROUND_COLOR
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:92:13-93:60
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:93:17-58
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:92:24-104
+meta-data#android.support.customtabs.trusted.SPLASH_SCREEN_FADE_OUT_DURATION
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:95:13-96:71
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:96:17-69
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:95:24-105
+meta-data#android.support.customtabs.trusted.FILE_PROVIDER_AUTHORITY
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:98:13-99:60
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:99:17-58
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:98:24-97
+meta-data#android.app.shortcuts
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:101:13-97
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:101:61-94
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:101:24-60
+meta-data#android.support.customtabs.trusted.FALLBACK_STRATEGY
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:103:13-104:56
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:104:17-53
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:103:24-91
+meta-data#android.support.customtabs.trusted.DISPLAY_MODE
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:109:13-110:45
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:110:17-42
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:109:24-86
+meta-data#android.support.customtabs.trusted.SCREEN_ORIENTATION
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:113:13-114:54
+	android:value
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:114:17-52
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:113:24-92
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:120:13-123:29
+action#android.intent.action.MAIN
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:121:17-69
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:121:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:122:17-77
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:122:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/hostName+data:scheme:https
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:125:13-131:29
+	android:autoVerify
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:125:28-53
+action#android.intent.action.VIEW
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:17-68
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:127:17-76
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:127:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:128:17-77
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:128:27-75
+data
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:129:17-130:54
+	android:host
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:130:21-52
+	android:scheme
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:129:23-45
+activity#com.google.androidbrowserhelper.trusted.FocusActivity
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:136:9-90
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:136:19-87
+activity#com.google.androidbrowserhelper.trusted.WebViewFallbackActivity
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:138:9-139:62
+	android:configChanges
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:139:13-59
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:138:19-97
+provider#androidx.core.content.FileProvider
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:141:9-149:20
+	android:grantUriPermissions
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:144:13-47
+	android:authorities
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:143:13-60
+	android:exported
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:145:13-37
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:142:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:146:13-148:53
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:148:17-50
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:147:17-67
+service#com.louiskueh.spotify_guesser.twa.DelegationService
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:151:9-166:19
+	android:enabled
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:153:13-55
+	android:exported
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:154:13-56
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:152:13-46
+meta-data#android.support.customtabs.trusted.SMALL_ICON
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:157:17-159:73
+	android:resource
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:159:21-70
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:158:21-81
+intent-filter#action:name:android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE+category:name:android.intent.category.DEFAULT
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:162:13-165:29
+action#android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE
+ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:163:17-105
+	android:name
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:163:25-103
+uses-sdk
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+MERGED from [com.google.androidbrowserhelper:androidbrowserhelper:2.3.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/572def1352afcb56982bb86acf89682d/androidbrowserhelper-2.3.0/AndroidManifest.xml:22:5-24:41
+MERGED from [com.google.androidbrowserhelper:androidbrowserhelper:2.3.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/572def1352afcb56982bb86acf89682d/androidbrowserhelper-2.3.0/AndroidManifest.xml:22:5-24:41
+MERGED from [androidx.browser:browser:1.4.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/b76183546e9802347e4b2c9dd5e9649b/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/b76183546e9802347e4b2c9dd5e9649b/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/90ecde5404179819368e2359ab771b50/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/90ecde5404179819368e2359ab771b50/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/722883bbeda4a23af2c332d7342ff3d3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/722883bbeda4a23af2c332d7342ff3d3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1fed12a61eaf3956026778ada29c2705/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1fed12a61eaf3956026778ada29c2705/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+		ADDED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml
+queries
+ADDED from [com.google.androidbrowserhelper:androidbrowserhelper:2.3.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/572def1352afcb56982bb86acf89682d/androidbrowserhelper-2.3.0/AndroidManifest.xml:26:5-34:15
+intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:scheme:https
+ADDED from [com.google.androidbrowserhelper:androidbrowserhelper:2.3.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/572def1352afcb56982bb86acf89682d/androidbrowserhelper-2.3.0/AndroidManifest.xml:27:9-33:18
