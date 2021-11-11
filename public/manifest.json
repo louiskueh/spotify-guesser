@@ -10,6 +10,12 @@
       "src": "/img/android/android-launchericon-144-144.png",
       "sizes": "144x144",
       "type": "image/png"
+    },
+    {
+      "src": "/img/spotify-guesser.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
