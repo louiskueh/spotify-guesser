@@ -37,21 +37,21 @@
 34        <intent>
 34-->[com.google.androidbrowserhelper:androidbrowserhelper:2.3.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/572def1352afcb56982bb86acf89682d/androidbrowserhelper-2.3.0/AndroidManifest.xml:27:9-33:18
 35            <action android:name="android.intent.action.VIEW" />
-35-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:17-68
-35-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:25-66
+35-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:123:17-68
+35-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:123:25-66
 36
 37            <category android:name="android.intent.category.BROWSABLE" />
-37-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:128:17-77
-37-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:128:27-75
+37-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:125:17-77
+37-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:125:27-75
 38
 39            <data android:scheme="https" />
-39-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:129:17-130:54
-39-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:129:23-45
+39-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:17-127:54
+39-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:23-45
 40        </intent>
 41    </queries>
 42
 43    <application
-43-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:29:5-169:19
+43-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:29:5-166:19
 44        android:name="com.louiskueh.spotify_guesser.twa.Application"
 44-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:30:9-35
 45        android:allowBackup="true"
@@ -98,7 +98,7 @@
 65-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:58:17-50
 66        </activity>
 67        <activity
-67-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:62:9-134:20
+67-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:62:9-131:20
 68            android:name="com.louiskueh.spotify_guesser.twa.LauncherActivity"
 68-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:62:19-50
 69            android:alwaysRetainTaskState="true"
@@ -180,104 +180,98 @@
 107                android:value="@string/fallbackType" />
 107-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:104:17-53
 108            <meta-data
-108-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:109:13-110:45
-109                android:name="android.support.customtabs.trusted.DISPLAY_MODE"
-109-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:109:24-86
-110                android:value="immersive" />
-110-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:110:17-42
-111            <meta-data
-111-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:113:13-114:54
-112                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
-112-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:113:24-92
-113                android:value="@string/orientation" />
-113-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:114:17-52
+108-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:110:13-111:54
+109                android:name="android.support.customtabs.trusted.SCREEN_ORIENTATION"
+109-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:110:24-92
+110                android:value="@string/orientation" />
+110-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:111:17-52
+111
+112            <intent-filter>
+112-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:117:13-120:29
+113                <action android:name="android.intent.action.MAIN" />
+113-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:118:17-69
+113-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:118:25-66
 114
-115            <intent-filter>
-115-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:120:13-123:29
-116                <action android:name="android.intent.action.MAIN" />
-116-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:121:17-69
-116-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:121:25-66
-117
-118                <category android:name="android.intent.category.LAUNCHER" />
-118-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:122:17-77
-118-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:122:27-74
-119            </intent-filter>
-120            <intent-filter android:autoVerify="true" >
-120-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:125:13-131:29
-120-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:125:28-53
-121                <action android:name="android.intent.action.VIEW" />
-121-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:17-68
-121-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:25-66
+115                <category android:name="android.intent.category.LAUNCHER" />
+115-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:119:17-77
+115-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:119:27-74
+116            </intent-filter>
+117            <intent-filter android:autoVerify="true" >
+117-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:122:13-128:29
+117-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:122:28-53
+118                <action android:name="android.intent.action.VIEW" />
+118-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:123:17-68
+118-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:123:25-66
+119
+120                <category android:name="android.intent.category.DEFAULT" />
+120-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:124:17-76
+120-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:124:27-73
+121                <category android:name="android.intent.category.BROWSABLE" />
+121-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:125:17-77
+121-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:125:27-75
 122
-123                <category android:name="android.intent.category.DEFAULT" />
-123-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:127:17-76
-123-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:127:27-73
-124                <category android:name="android.intent.category.BROWSABLE" />
-124-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:128:17-77
-124-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:128:27-75
-125
-126                <data
-126-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:129:17-130:54
-127                    android:host="@string/hostName"
-127-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:130:21-52
-128                    android:scheme="https" />
-128-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:129:23-45
-129            </intent-filter>
-130        </activity>
-131        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
-131-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:136:9-90
-131-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:136:19-87
-132        <activity
-132-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:138:9-139:62
-133            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
-133-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:138:19-97
-134            android:configChanges="orientation|screenSize" />
-134-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:139:13-59
-135
-136        <provider
-136-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:141:9-149:20
-137            android:name="androidx.core.content.FileProvider"
-137-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:142:13-62
-138            android:authorities="@string/providerAuthority"
-138-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:143:13-60
-139            android:exported="false"
-139-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:145:13-37
-140            android:grantUriPermissions="true" >
-140-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:144:13-47
-141            <meta-data
-141-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:146:13-148:53
-142                android:name="android.support.FILE_PROVIDER_PATHS"
-142-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:147:17-67
-143                android:resource="@xml/filepaths" />
-143-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:148:17-50
-144        </provider>
-145
-146        <service
-146-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:151:9-166:19
-147            android:name="com.louiskueh.spotify_guesser.twa.DelegationService"
-147-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:152:13-46
-148            android:enabled="@bool/enableNotification"
-148-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:153:13-55
-149            android:exported="@bool/enableNotification" >
-149-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:154:13-56
-150            <meta-data
-150-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:157:17-159:73
-151                android:name="android.support.customtabs.trusted.SMALL_ICON"
-151-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:158:21-81
-152                android:resource="@drawable/ic_notification_icon" />
-152-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:159:21-70
+123                <data
+123-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:17-127:54
+124                    android:host="@string/hostName"
+124-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:127:21-52
+125                    android:scheme="https" />
+125-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:126:23-45
+126            </intent-filter>
+127        </activity>
+128        <activity android:name="com.google.androidbrowserhelper.trusted.FocusActivity" />
+128-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:133:9-90
+128-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:133:19-87
+129        <activity
+129-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:135:9-136:62
+130            android:name="com.google.androidbrowserhelper.trusted.WebViewFallbackActivity"
+130-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:135:19-97
+131            android:configChanges="orientation|screenSize" />
+131-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:136:13-59
+132
+133        <provider
+133-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:138:9-146:20
+134            android:name="androidx.core.content.FileProvider"
+134-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:139:13-62
+135            android:authorities="@string/providerAuthority"
+135-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:140:13-60
+136            android:exported="false"
+136-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:142:13-37
+137            android:grantUriPermissions="true" >
+137-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:141:13-47
+138            <meta-data
+138-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:143:13-145:53
+139                android:name="android.support.FILE_PROVIDER_PATHS"
+139-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:144:17-67
+140                android:resource="@xml/filepaths" />
+140-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:145:17-50
+141        </provider>
+142
+143        <service
+143-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:148:9-163:19
+144            android:name="com.louiskueh.spotify_guesser.twa.DelegationService"
+144-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:149:13-46
+145            android:enabled="@bool/enableNotification"
+145-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:150:13-55
+146            android:exported="@bool/enableNotification" >
+146-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:151:13-56
+147            <meta-data
+147-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:154:17-156:73
+148                android:name="android.support.customtabs.trusted.SMALL_ICON"
+148-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:155:21-81
+149                android:resource="@drawable/ic_notification_icon" />
+149-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:156:21-70
+150
+151            <intent-filter>
+151-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:159:13-162:29
+152                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
+152-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:160:17-105
+152-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:160:25-103
 153
-154            <intent-filter>
-154-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:162:13-165:29
-155                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE" />
-155-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:163:17-105
-155-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:163:25-103
-156
-157                <category android:name="android.intent.category.DEFAULT" />
-157-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:127:17-76
-157-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:127:27-73
-158            </intent-filter>
-159        </service>
-160    </application>
-161
-162</manifest>
+154                <category android:name="android.intent.category.DEFAULT" />
+154-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:124:17-76
+154-->/Users/louiskueh/Code/spotify-guesser/app/src/main/AndroidManifest.xml:124:27-73
+155            </intent-filter>
+156        </service>
+157    </application>
+158
+159</manifest>

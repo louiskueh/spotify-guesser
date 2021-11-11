@@ -22,7 +22,7 @@
     <!-- Value from default config. -->
     <string name="launchUrl" translatable="false">https://spotify-guesser.louiskueh.com/</string>
     <!-- Value from default config. -->
-    <string name="launcherName" translatable="false">sptftgsr</string>
+    <string name="launcherName" translatable="false">SpotifyGuess</string>
     <!-- Value from default config. -->
     <color name="navigationColor">#000000</color>
     <!-- Value from default config. -->

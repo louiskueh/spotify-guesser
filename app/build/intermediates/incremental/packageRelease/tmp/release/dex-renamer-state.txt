@@ -1,4 +1,4 @@
-#Thu Nov 11 10:50:10 GMT 2021
+#Thu Nov 11 10:59:33 GMT 2021
 base.0=/Users/louiskueh/Code/spotify-guesser/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

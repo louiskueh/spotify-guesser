@@ -1038,8 +1038,8 @@ androidx.core.view.accessibility.AccessibilityNodeProviderCompat
 androidx.annotation.AnimatorRes
 androidx.core.view.accessibility.AccessibilityManagerCompat$TouchExplorationStateChangeListenerWrapper
 androidx.versionedparcelable.ParcelField
-androidx.core.content.res.GradientColorInflaterCompat
 androidx.core.content.res.ColorStateListInflaterCompat
+androidx.core.content.res.GradientColorInflaterCompat
 com.google.androidbrowserhelper.trusted.TwaSharedPreferencesManager:
     private static final java.lang.String PREFS_NAME
     private static final java.lang.String KEY_PROVIDER_PACKAGE

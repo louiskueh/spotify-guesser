@@ -26,7 +26,7 @@ def twaManifest = [
     hostName: 'spotify-guesser.louiskueh.com', // The domain being opened in the TWA.
     launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
     name: 'Artist-guesser Spotify', // The application name.
-    launcherName: 'sptftgsr', // The name shown on the Android Launcher.
+    launcherName: 'SpotifyGuess', // The name shown on the Android Launcher.
     themeColor: '#000000', // The color used for the status bar.
     navigationColor: '#000000', // The color used for the navigation bar.
     navigationColorDark: '#000000', // The color used for the dark navbar.
