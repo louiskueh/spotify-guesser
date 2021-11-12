@@ -8,6 +8,7 @@ class FlippingCardBack extends Component {
   render() {
     return (
       <div className="back">
+        Your Guess
         <MDBCardBody>
           <MDBInput
             hint={this.props.songName}
