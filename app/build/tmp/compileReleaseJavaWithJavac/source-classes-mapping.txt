@@ -1,8 +1,0 @@
-com/louiskueh/spotify_guesser/twa/BuildConfig.java
- com.louiskueh.spotify_guesser.twa.BuildConfig
-com/louiskueh/spotify_guesser/twa/LauncherActivity.java
- com.louiskueh.spotify_guesser.twa.LauncherActivity
-com/louiskueh/spotify_guesser/twa/Application.java
- com.louiskueh.spotify_guesser.twa.Application
-com/louiskueh/spotify_guesser/twa/DelegationService.java
- com.louiskueh.spotify_guesser.twa.DelegationService

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/louiskueh/Code/spotify-guesser/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "C:\\Users\\Louis\\Programming\\artist-guesser-spotify\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "/private/var/root/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\Louis\\.gradle\\caches\\transforms-2\\files-2.1\\e601daed4ba62929db8b322b2974c8f8\\core-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

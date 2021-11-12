@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/louiskueh/Code/spotify-guesser/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ko/values-ko.xml",
+            "outputFile": "C:\\Users\\Louis\\Programming\\artist-guesser-spotify\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
-                    "source": "/private/var/root/.gradle/caches/transforms-2/files-2.1/e601daed4ba62929db8b322b2974c8f8/core-1.1.0/res/values-ko/values-ko.xml",
+                    "source": "C:\\Users\\Louis\\.gradle\\caches\\transforms-2\\files-2.1\\b76183546e9802347e4b2c9dd5e9649b\\browser-1.4.0\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,141,234,337",
+                        "endColumns": "85,92,102,93",
+                        "endOffsets": "136,229,332,426"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Louis\\.gradle\\caches\\transforms-2\\files-2.1\\e601daed4ba62929db8b322b2974c8f8\\core-1.1.0\\res\\values-ko\\values-ko.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -18,16 +28,6 @@
                         "startOffsets": "431",
                         "endColumns": "100",
                         "endOffsets": "527"
-                    }
-                },
-                {
-                    "source": "/private/var/root/.gradle/caches/transforms-2/files-2.1/b76183546e9802347e4b2c9dd5e9649b/browser-1.4.0/res/values-ko/values-ko.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,141,234,337",
-                        "endColumns": "85,92,102,93",
-                        "endOffsets": "136,229,332,426"
                     }
                 }
             ]
