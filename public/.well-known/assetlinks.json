@@ -4,7 +4,8 @@
       "namespace": "android_app",
       "package_name": "com.louiskueh.spotify_guesser.twa",
       "sha256_cert_fingerprints": [
-        "0E:49:F6:32:84:8F:C0:1C:94:A4:B9:51:01:43:C7:97:77:BD:BB:71:5F:6C:E1:9A:A0:FD:B9:DE:A7:6B:78:7F"
+        "0E:49:F6:32:84:8F:C0:1C:94:A4:B9:51:01:43:C7:97:77:BD:BB:71:5F:6C:E1:9A:A0:FD:B9:DE:A7:6B:78:7F",
+        "D7:85:C1:DF:7B:E3:68:9B:D6:F5:3C:F0:FE:33:CB:B2:68:FB:2C:C3:29:2C:B9:54:9F:6D:35:0A:B4:69:A4:6B"
       ]
     }
   }]
