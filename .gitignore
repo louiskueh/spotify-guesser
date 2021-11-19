@@ -9,7 +9,15 @@
 /coverage
 
 # production
-/build
+!build/.well-known/*
+# /build/*
+/build/static/*
+/build/*.png
+/build/*.json
+/build/*.ico
+/build/*.html
+/build/*.txt
+/build/*.js
 
 # misc
 .DS_Store
